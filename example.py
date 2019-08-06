@@ -5,6 +5,7 @@ class_files(classname = "Dog",
 	public_methods =  [	"void bark(float strength, int times)", 
 						"int getLegs()"],
 	private_methods = [	"int ChangeLegs(int quantity)"]
+)
 
 
 #generates cat.cpp
