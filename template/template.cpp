@@ -7,7 +7,4 @@
 	
 }}
 
-//public methods
-{public_methods}
-//private methods
-{private_methods}
+{methods}
