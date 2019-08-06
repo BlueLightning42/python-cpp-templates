@@ -12,7 +12,7 @@ def methodfunc(m,classname, cpp=True):
 		if param[0] == '': param = []
 
 		if cpp:
-			s = (' ' + classname + '::').join(dlr.split()) + '('
+			s = (f' {classname}::').join(dlr.split()) + '('
 			tmp = []
 			if len(param) > 0:
 				for p in param:
@@ -26,7 +26,7 @@ def methodfunc(m,classname, cpp=True):
 					s += ', '.join(tmp)
 			s += '){\n\t\n}\n'
 		else: # .h
-			s = '\n\t' + dlr + '('
+			s = f'\n\t{dlr}('
 			tmp = []
 			if len(param) > 1:
 				for p in param:
